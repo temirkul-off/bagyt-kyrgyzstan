@@ -5,6 +5,7 @@
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import cloudflareAdapter from "@tanstack/start-plugin-adapters/cloudflare";
 
 export default defineConfig({
   tanstackStart: {
@@ -12,4 +13,14 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // 1. Forces Lovable's underlying engine (Nitro) to output Cloudflare Edge compatible files
+  nitro: {
+    preset: "cloudflare-pages"
+  },
+  // 2. Provides the standard array Cloudflare is looking for
+  vite: {
+    plugins: [
+      cloudflareAdapter()
+    ]
+  }
 });
