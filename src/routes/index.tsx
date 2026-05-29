@@ -72,7 +72,7 @@ function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a href="#contact" className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-7 py-3.5 text-sm font-semibold shadow-[var(--shadow-elegant)] hover:opacity-90 transition">
-              Get Bagyt — 12,000 som
+              Get Bagyt
             </a>
             <a href="#story" className="inline-flex items-center rounded-full border border-border px-7 py-3.5 text-sm font-semibold hover:bg-secondary transition">
               Read our story
@@ -149,7 +149,7 @@ function Product() {
             Bagyt constantly emits a signal forward and reads what bounces back. Unlike a regular cane, it sees what's ahead at body height — silently warning the user before contact.
           </p>
           <ul className="mt-8 space-y-4">
-            {["Production cost: 9,500 som", "Retail price: 12,000 som", "7× cheaper than imported alternatives"].map((t) => (
+            {["Retail price: 12 000 KGS", "7× cheaper than imported alternatives"].map((t) => (
               <li key={t} className="flex items-center gap-3">
                 <div className="h-2 w-2 rounded-full bg-accent" />
                 <span className="font-medium">{t}</span>
@@ -167,7 +167,7 @@ function Stats() {
     { v: "20", l: "Canes already in hands" },
     { v: "150", l: "Units in active order" },
     { v: "600", l: "Year-one sales target" },
-    { v: "7.2M", l: "Projected revenue (som)" },
+    { v: "7.2M", l: "Projected revenue (KGS)" },
   ];
   return (
     <section id="impact" className="py-24 px-6 relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
