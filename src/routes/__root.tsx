@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Bagyt - A step toward freedom." },
+      { name: "description", content: "We give people the right to walk safely." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Bagyt - A step toward freedom." },
+      { property: "og:description", content: "We give people the right to walk safely." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Bagyt - A step toward freedom." },
+      { name: "twitter:description", content: "We give people the right to walk safely." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b6e6325c-12ab-46a9-813c-ec46a4d7577d/id-preview-82d86935--b6538a2b-8aee-49d9-8077-8a598f605c7c.lovable.app-1780092086706.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b6e6325c-12ab-46a9-813c-ec46a4d7577d/id-preview-82d86935--b6538a2b-8aee-49d9-8077-8a598f605c7c.lovable.app-1780092086706.png" },
     ],
     links: [
       {
